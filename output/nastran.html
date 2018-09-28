@@ -1,0 +1,4623 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Cover Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Cover</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Nastran Typedefs</h1>
+        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+<ol><li><a href="#BEAM3_FORCE">BEAM3_FORCE</a></li><li><a href="#BEAM3_FORCE_CPLX">BEAM3_FORCE_CPLX</a></li><li><a href="#BEAM3_SS">BEAM3_SS</a></li><li><a href="#BEAM3_SS_CPLX">BEAM3_SS_CPLX</a></li><li><a href="#BEAM3_SS_RR">BEAM3_SS_RR</a></li><li><a href="#BEAM_FORCE">BEAM_FORCE</a></li><li><a href="#BEAM_FORCE_CPLX">BEAM_FORCE_CPLX</a></li><li><a href="#BEAM_SS">BEAM_SS</a></li><li><a href="#BEAM_SS_CPLX">BEAM_SS_CPLX</a></li><li><a href="#BEAM_SS_RR">BEAM_SS_RR</a></li><li><a href="#BEND_FORCE">BEND_FORCE</a></li><li><a href="#BEND_FORCE_CPLX">BEND_FORCE_CPLX</a></li><li><a href="#BEND_SS">BEND_SS</a></li><li><a href="#BEND_SS_CPLX">BEND_SS_CPLX</a></li><li><a href="#BEND_SS_RR">BEND_SS_RR</a></li><li><a href="#CENTER_2D_SS">CENTER_2D_SS</a></li><li><a href="#CENTER_2D_SS_CPLX">CENTER_2D_SS_CPLX</a></li><li><a href="#CIF_SS">CIF_SS</a></li><li><a href="#COMPLEX">COMPLEX</a></li><li><a href="#ELEM_FTGSM">ELEM_FTGSM</a></li><li><a href="#ELEM_LAYERED_FTGCN">ELEM_LAYERED_FTGCN</a></li><li><a href="#ELEM_SS_FTGCN">ELEM_SS_FTGCN</a></li><li><a href="#FTGV_SHELL">FTGV_SHELL</a></li><li><a href="#FTGV_SOLID">FTGV_SOLID</a></li><li><a href="#FTG_BM_AUTO">FTG_BM_AUTO</a></li><li><a href="#FTG_BM_SIMPLE">FTG_BM_SIMPLE</a></li><li><a href="#FTG_BM_SM_AUTO">FTG_BM_SM_AUTO</a></li><li><a href="#FTG_BM_SM_SIMPLE">FTG_BM_SM_SIMPLE</a></li><li><a href="#FTG_BM_SM_STD">FTG_BM_SM_STD</a></li><li><a href="#FTG_BM_STD">FTG_BM_STD</a></li><li><a href="#GRID_2D_SS">GRID_2D_SS</a></li><li><a href="#GRID_2D_SS_CPLX">GRID_2D_SS_CPLX</a></li><li><a href="#GRID_2D_SS_FD">GRID_2D_SS_FD</a></li><li><a href="#GRID_2D_SS_FDNL">GRID_2D_SS_FDNL</a></li><li><a href="#GRID_2D_SS_FD_CPLX">GRID_2D_SS_FD_CPLX</a></li><li><a href="#GRID_AXISYM_SS">GRID_AXISYM_SS</a></li><li><a href="#GRID_AXISYM_SS_CPLX">GRID_AXISYM_SS_CPLX</a></li><li><a href="#GRID_SS">GRID_SS</a></li><li><a href="#GRID_SS_CPLX">GRID_SS_CPLX</a></li><li><a href="#GRID_SS_FD">GRID_SS_FD</a></li><li><a href="#GRID_SS_FDNL">GRID_SS_FDNL</a></li><li><a href="#GRID_SS_NL">GRID_SS_NL</a></li><li><a href="#NLOUT_TYPE">NLOUT_TYPE</a></li><li><a href="#OCOMP_BEAM3_SS">OCOMP_BEAM3_SS</a></li><li><a href="#OCOMP_ELEM_SS">OCOMP_ELEM_SS</a></li><li><a href="#OCOMP_ELEM_SS_CPLX">OCOMP_ELEM_SS_CPLX</a></li><li><a href="#OCOMP_GASKET_SS">OCOMP_GASKET_SS</a></li><li><a href="#OCOMP_THERM_SS">OCOMP_THERM_SS</a></li><li><a href="#QUAD4_CN_FORCE">QUAD4_CN_FORCE</a></li><li><a href="#QUAD4_CN_FORCE_CPLX">QUAD4_CN_FORCE_CPLX</a></li><li><a href="#QUAD4_FORCE">QUAD4_FORCE</a></li><li><a href="#QUAD4_FORCE_CPLX">QUAD4_FORCE_CPLX</a></li></ol><h2 id="BEAM3_FORCE">BEAM3_FORCE</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>Number of active grids or corner grid ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>MY</td>
+      <td>double</td>
+      <td>Membrane force  in y</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>MZ</td>
+      <td>double</td>
+      <td>Bending moment in z-direction</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>QY</td>
+      <td>double</td>
+      <td>Shear force in y-direction</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>QZ</td>
+      <td>double</td>
+      <td>Shear force in z-direction</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>NX</td>
+      <td>double</td>
+      <td>Axial force</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>TX</td>
+      <td>double</td>
+      <td>Shear  force  in x</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>VB</td>
+      <td>double</td>
+      <td>Bi-shear force</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>MB</td>
+      <td>double</td>
+      <td>Bi-moment</td>
+    </tr>
+  </tbody>
+</table><h2 id="BEAM3_FORCE_CPLX">BEAM3_FORCE_CPLX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>Number of active grids or corner grid ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>MYR</td>
+      <td>double</td>
+      <td>Membrane force  in y - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>MZR</td>
+      <td>double</td>
+      <td>Bending moment in z-direction - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>QYR</td>
+      <td>double</td>
+      <td>Shear force in y-direction - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>QZR</td>
+      <td>double</td>
+      <td>Shear force in z-direction - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>NXR</td>
+      <td>double</td>
+      <td>Axial force - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>TXR</td>
+      <td>double</td>
+      <td>Shear  force  in x - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>VBR</td>
+      <td>double</td>
+      <td>Bi-shear force - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>MBR</td>
+      <td>double</td>
+      <td>Bi-moment - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>MYI</td>
+      <td>double</td>
+      <td>Membrane force  in y - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>MZI</td>
+      <td>double</td>
+      <td>Bending moment in z-direction - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>QYI</td>
+      <td>double</td>
+      <td>Shear force in y-direction - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>QZI</td>
+      <td>double</td>
+      <td>Shear force in z-direction - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>NXI</td>
+      <td>double</td>
+      <td>Axial force - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>TXI</td>
+      <td>double</td>
+      <td>Shear  force  in x - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>VBI</td>
+      <td>double</td>
+      <td>Bi-shear force - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>MBI</td>
+      <td>double</td>
+      <td>Bi-moment - imag./phase part</td>
+    </tr>
+  </tbody>
+</table><h2 id="BEAM3_SS">BEAM3_SS</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>External Grid ID or Gauss point</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>XC</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point C</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>XD</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point D</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>XE</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point E</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>XF</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point F</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>MAX</td>
+      <td>double</td>
+      <td>Maximimum normal Stress or Strain</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>MIN</td>
+      <td>double</td>
+      <td>Minimimum normal Stress or Strain</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>MST</td>
+      <td>double</td>
+      <td>Margin of Safety in Tension</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>MSC</td>
+      <td>double</td>
+      <td>Margin of Safety in Compression</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>YC</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at Point C</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>YD</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at Point D</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>YE</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at Point E</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>YF</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at Point F</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>YMAX</td>
+      <td>double</td>
+      <td>Maximum Shear Stress or Strain in Y-direction</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>YMIN</td>
+      <td>double</td>
+      <td>Minimum Shear Stress or Strain in Y-direction</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>ZC</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at Point C</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>ZD</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at Point D</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>ZE</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at Point E</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>ZF</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at Point F</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>ZMAX</td>
+      <td>double</td>
+      <td>Maximum Shear Stress or Strain in Z-direction</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>ZMIN</td>
+      <td>double</td>
+      <td>Minimum Shear Stress or Strain in Z-direction</td>
+    </tr>
+  </tbody>
+</table><h2 id="BEAM3_SS_CPLX">BEAM3_SS_CPLX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>External Grid Point ID or Gauss point represen...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>XCR</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point C, real part</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>XDR</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point D, real part</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>XER</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point E, real part</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>XFR</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point F, real part</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>XCI</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point C, imaginary ...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>XDI</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point D, imaginary ...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>XEI</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point E, imaginary ...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>XFI</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point F, imaginary ...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>YCR</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at point...</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>YDR</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at point...</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>YER</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at point...</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>YFR</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at point...</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>YCI</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at point...</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>YDI</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at point...</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>YEI</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at point...</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>YFI</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at point...</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>ZCR</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at point...</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>ZDR</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at point...</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>ZER</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at point...</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>ZFR</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at point...</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>ZCI</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at point...</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>ZDI</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at point...</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>ZEI</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at point...</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>ZFI</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at point...</td>
+    </tr>
+  </tbody>
+</table><h2 id="BEAM3_SS_RR">BEAM3_SS_RR</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>External Grid Point ID or Gauss point represen...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>XC</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point C</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>XD</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point D</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>XE</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point E</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>XF</td>
+      <td>double</td>
+      <td>Normal Stress or Strain at Point F</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>YC</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at point C</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>YD</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at point D</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>YE</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at point E</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>YF</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Y-direction at point F</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>ZC</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at point C</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>ZD</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at point D</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>ZE</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at point E</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>ZF</td>
+      <td>double</td>
+      <td>Shear Stress or Strain in Z-direction at point F</td>
+    </tr>
+  </tbody>
+</table><h2 id="BEAM_FORCE">BEAM_FORCE</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>Number of active grids or corner grid ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SD</td>
+      <td>double</td>
+      <td>Station distance divided by length</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>BM1</td>
+      <td>double</td>
+      <td>Bending moment plane 1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>BM2</td>
+      <td>double</td>
+      <td>Bending moment plane 2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>TS1</td>
+      <td>double</td>
+      <td>Shear plane 1</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>TS2</td>
+      <td>double</td>
+      <td>Shear plane 2</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>AF</td>
+      <td>double</td>
+      <td>Axial Force</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>TTRQ</td>
+      <td>double</td>
+      <td>Total   Torque</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>WTRQ</td>
+      <td>double</td>
+      <td>Warping Torque</td>
+    </tr>
+  </tbody>
+</table><h2 id="BEAM_FORCE_CPLX">BEAM_FORCE_CPLX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>Number of active grids or corner grid ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SD</td>
+      <td>double</td>
+      <td>Station distance divided by length</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>BM1R</td>
+      <td>double</td>
+      <td>Bending moment plane 1 - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>BM2R</td>
+      <td>double</td>
+      <td>Bending moment plane 2 - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>TS1R</td>
+      <td>double</td>
+      <td>Shear plane 1 - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>TS2R</td>
+      <td>double</td>
+      <td>Shear plane 2 - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>AFR</td>
+      <td>double</td>
+      <td>Axial force   - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>TTRQR</td>
+      <td>double</td>
+      <td>Total   torque - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>WTRQR</td>
+      <td>double</td>
+      <td>Warping torque - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>BM1I</td>
+      <td>double</td>
+      <td>Bending moment plane 1 - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>BM2I</td>
+      <td>double</td>
+      <td>Bending moment plane 2 - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>TS1I</td>
+      <td>double</td>
+      <td>Shear plane 1 - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>TS2I</td>
+      <td>double</td>
+      <td>Shear plane 2 - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>AFI</td>
+      <td>double</td>
+      <td>Axial Force   - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>TTRQI</td>
+      <td>double</td>
+      <td>Total   torque - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>WTRQI</td>
+      <td>double</td>
+      <td>Warping torque - imag./phase part</td>
+    </tr>
+  </tbody>
+</table><h2 id="BEAM_SS">BEAM_SS</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>External Grid Point ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SD</td>
+      <td>double</td>
+      <td>Station distance divided by length</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>XC</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point C</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>XD</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point D</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>XE</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point E</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>XF</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point F</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>MAX</td>
+      <td>double</td>
+      <td>Maximal Stress or Strain</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>MIN</td>
+      <td>double</td>
+      <td>Minimal Stress or Strain</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>MST</td>
+      <td>double</td>
+      <td>Margin of Safety in Tension</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>MSC</td>
+      <td>double</td>
+      <td>Margin of Safety in Compression</td>
+    </tr>
+  </tbody>
+</table><h2 id="BEAM_SS_CPLX">BEAM_SS_CPLX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>External Grid Point ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SD</td>
+      <td>double</td>
+      <td>Station distance divided by length</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>XCR</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point C - rea...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>XDR</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point D - rea...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>XER</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point E - rea...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>XFR</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point F - rea...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>XCI</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point C - ima...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>XDI</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point D - ima...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>XEI</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point E - ima...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>XFI</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point F - ima...</td>
+    </tr>
+  </tbody>
+</table><h2 id="BEAM_SS_RR">BEAM_SS_RR</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>External Grid Point ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SD</td>
+      <td>double</td>
+      <td>Station distance divided by length</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>XC</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point C</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>XD</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point D</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>XE</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point E</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>XF</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at Point F</td>
+    </tr>
+  </tbody>
+</table><h2 id="BEND_FORCE">BEND_FORCE</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>Number of active grids or corner grid ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>BM1</td>
+      <td>double</td>
+      <td>Bending moment plane 1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>BM2</td>
+      <td>double</td>
+      <td>Bending moment plane 2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>TS1</td>
+      <td>double</td>
+      <td>Shear plane 1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>TS2</td>
+      <td>double</td>
+      <td>Shear plane 2</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>AF</td>
+      <td>double</td>
+      <td>Axial Force</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>TRQ</td>
+      <td>double</td>
+      <td>Torque</td>
+    </tr>
+  </tbody>
+</table><h2 id="BEND_FORCE_CPLX">BEND_FORCE_CPLX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>Number of active grids or corner grid ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>BM1R</td>
+      <td>double</td>
+      <td>Bending moment plane 1 - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>BM2R</td>
+      <td>double</td>
+      <td>Bending moment plane 2 - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>TS1R</td>
+      <td>double</td>
+      <td>Shear plane 1 - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>TS2R</td>
+      <td>double</td>
+      <td>Shear plane 2 - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>AFR</td>
+      <td>double</td>
+      <td>Axial force   - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>TRQR</td>
+      <td>double</td>
+      <td>Torque        - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>BM1I</td>
+      <td>double</td>
+      <td>Bending moment plane 1 - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>BM2I</td>
+      <td>double</td>
+      <td>Bending moment plane 2 - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>TS1I</td>
+      <td>double</td>
+      <td>Shear plane 1 - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>TS2I</td>
+      <td>double</td>
+      <td>Shear plane 2 - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>AFI</td>
+      <td>double</td>
+      <td>Axial Force   - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>TRQI</td>
+      <td>double</td>
+      <td>Torque        - imag./phase part</td>
+    </tr>
+  </tbody>
+</table><h2 id="BEND_SS">BEND_SS</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>External Grid Point ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>CA</td>
+      <td>double</td>
+      <td>Circumferential Angle</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>C</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point C</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>D</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point D</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>E</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point E</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>F</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point F</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>MAX</td>
+      <td>double</td>
+      <td>Maximum Stress or Strain</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>MIN</td>
+      <td>double</td>
+      <td>Minimum Stress or Strain</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>MST</td>
+      <td>double</td>
+      <td>Margin of Safety in Tension</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>MSC</td>
+      <td>double</td>
+      <td>Margin of Safety in Compression</td>
+    </tr>
+  </tbody>
+</table><h2 id="BEND_SS_CPLX">BEND_SS_CPLX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>External Grid Point ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>CA</td>
+      <td>double</td>
+      <td>Circumferential Angle</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>CR</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point C - rea...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>DR</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point D - rea...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ER</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point E - rea...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>FR</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point F - rea...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>CI</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point C - ima...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>DI</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point D - ima...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>EI</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point E - ima...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>FI</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point F - ima...</td>
+    </tr>
+  </tbody>
+</table><h2 id="BEND_SS_RR">BEND_SS_RR</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>External Grid Point ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>CA</td>
+      <td>double</td>
+      <td>Circumferential Angle</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>C</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point C</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>D</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point D</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>E</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point E</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>F</td>
+      <td>double</td>
+      <td>Longitudonal Stress or Strain at point F</td>
+    </tr>
+  </tbody>
+</table><h2 id="CENTER_2D_SS">CENTER_2D_SS</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>FD1</td>
+      <td>double</td>
+      <td>Z1 = Fiber distance</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>X1</td>
+      <td>double</td>
+      <td>Normal in X         at Z1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Y1</td>
+      <td>double</td>
+      <td>Normal in Y         at Z1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>TXY1</td>
+      <td>double</td>
+      <td>Shear  in xy        at Z1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>FD2</td>
+      <td>double</td>
+      <td>Z2 = Fiber distance</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>X2</td>
+      <td>double</td>
+      <td>Normal in X         at Z2</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Y2</td>
+      <td>double</td>
+      <td>Normal in Y         at Z2</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>TXY2</td>
+      <td>double</td>
+      <td>Shear  in xy        at Z2</td>
+    </tr>
+  </tbody>
+</table><h2 id="CENTER_2D_SS_CPLX">CENTER_2D_SS_CPLX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>FD1</td>
+      <td>double</td>
+      <td>Z1 = Fiber distance</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>X1R</td>
+      <td>double</td>
+      <td>Normal in X         at Z1 - real part</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>X1I</td>
+      <td>double</td>
+      <td>Normal in X         at Z1 - imaginary part</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Y1R</td>
+      <td>double</td>
+      <td>Normal in Y         at Z1 - real part</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Y1I</td>
+      <td>double</td>
+      <td>Normal in Y         at Z1 - imaginary part</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>TXY1R</td>
+      <td>double</td>
+      <td>Shear  in xy        at Z1 - real part</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>TXY1I</td>
+      <td>double</td>
+      <td>Shear  in xy        at Z1</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>FD2</td>
+      <td>double</td>
+      <td>Z2 = Fiber distance</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>X2R</td>
+      <td>double</td>
+      <td>Normal in X         at Z2 - real part</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>X2I</td>
+      <td>double</td>
+      <td>Normal in X         at Z2 - imaginary part</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Y2R</td>
+      <td>double</td>
+      <td>Normal in Y         at Z2 - real part</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Y2I</td>
+      <td>double</td>
+      <td>Normal in Y         at Z2 - imaginary part</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>TXY2R</td>
+      <td>double</td>
+      <td>Shear  in xy        at Z2 - real part</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>TXY2I</td>
+      <td>double</td>
+      <td>Shear  in xy        at Z2 - imaginary part</td>
+    </tr>
+  </tbody>
+</table><h2 id="CIF_SS">CIF_SS</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>Number of active grids or corner grid ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SX</td>
+      <td>double</td>
+      <td>ply stress SX</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SXY</td>
+      <td>double</td>
+      <td>ply stress SXY</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SXZ</td>
+      <td>double</td>
+      <td>ply stress SXZ</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>NX</td>
+      <td>double</td>
+      <td>Axial force</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>NXY</td>
+      <td>double</td>
+      <td>Shear Strain</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>NXZ</td>
+      <td>double</td>
+      <td>Shear Strain 2</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>DAMAGE</td>
+      <td>double</td>
+      <td>Damage Value</td>
+    </tr>
+  </tbody>
+</table><h2 id="COMPLEX">COMPLEX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>RE</td>
+      <td>double</td>
+      <td>real part of complex type</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>IM</td>
+      <td>double</td>
+      <td>imaginary part of complex type</td>
+    </tr>
+  </tbody>
+</table><h2 id="ELEM_FTGSM">ELEM_FTGSM</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>grid id</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>slcty</td>
+      <td>integer</td>
+      <td>seam location and type</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>LIFE</td>
+      <td>double</td>
+      <td>Life</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>LOGLIFE</td>
+      <td>double</td>
+      <td>LOG10 (LIFE)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>EQLIFE</td>
+      <td>double</td>
+      <td>Life in equivalent units</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>LOGEQLIF</td>
+      <td>double</td>
+      <td>LOG10 (EQLIFE)</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>DAMAGE</td>
+      <td>double</td>
+      <td>Damage</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>LOGDAMAG</td>
+      <td>double</td>
+      <td>LOG10 (DAMAGE)</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>MAXSTRES</td>
+      <td>double</td>
+      <td>Max Stress</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>MINSTRES</td>
+      <td>double</td>
+      <td>Min Stress</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>FOS</td>
+      <td>double</td>
+      <td>Factor of Safety</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>CRITANGL</td>
+      <td>double</td>
+      <td>Critical Angle</td>
+    </tr>
+  </tbody>
+</table><h2 id="ELEM_LAYERED_FTGCN">ELEM_LAYERED_FTGCN</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>grid id</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>LAYER1</td>
+      <td>integer</td>
+      <td>0 (for solids), 1 (for top layer), 2 (for bott...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>LIFE1</td>
+      <td>double</td>
+      <td>Life</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>LOGLIFE1</td>
+      <td>double</td>
+      <td>LOG10 (LIFE)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>LGEQLIF1</td>
+      <td>double</td>
+      <td>LOG10 (EQLIFE)</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>EQLIFE1</td>
+      <td>double</td>
+      <td>Life in equivalent units</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>DAMAGE1</td>
+      <td>double</td>
+      <td>Damage</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>LGDAMAG1</td>
+      <td>double</td>
+      <td>LOG10 (DAMAGE)</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>MAXVALUE1</td>
+      <td>double</td>
+      <td>Max Stress or Strain</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>MINVALUE1</td>
+      <td>double</td>
+      <td>Min Stress or Strain</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>FOS1</td>
+      <td>double</td>
+      <td>Factor of Safety</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>CRTANGL1</td>
+      <td>double</td>
+      <td>Critical Angle</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>LAYER2</td>
+      <td>integer</td>
+      <td>0 (for solids), 1 (for top layer), 2 (for bott...</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>LIFE2</td>
+      <td>double</td>
+      <td>Life</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>LOGLIFE2</td>
+      <td>double</td>
+      <td>LOG10 (LIFE)</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>EQLIFE2</td>
+      <td>double</td>
+      <td>Life in equivalent units</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>LGEQLIF2</td>
+      <td>double</td>
+      <td>LOG10 (EQLIFE)</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>DAMAGE2</td>
+      <td>double</td>
+      <td>Damage</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>LGDAMAG2</td>
+      <td>double</td>
+      <td>LOG10 (DAMAGE)</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>MAXVALUE2</td>
+      <td>double</td>
+      <td>Max Stress or Strain</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>MINVALUE2</td>
+      <td>double</td>
+      <td>Min Stress or Strain</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>FOS2</td>
+      <td>double</td>
+      <td>Factor of Safety</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>CRTANGL2</td>
+      <td>double</td>
+      <td>Critical Angle</td>
+    </tr>
+  </tbody>
+</table><h2 id="ELEM_SS_FTGCN">ELEM_SS_FTGCN</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>grid id</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>LAYER</td>
+      <td>integer</td>
+      <td>0 (for solids), 1 (for top layer), 2 (for bott...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>LIFE</td>
+      <td>double</td>
+      <td>Life</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>LOGLIFE</td>
+      <td>double</td>
+      <td>LOG10 (LIFE)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>EQLIFE</td>
+      <td>double</td>
+      <td>Life in equivalent units</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>LOGEQLIF</td>
+      <td>double</td>
+      <td>LOG10 (EQLIFE)</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>DAMAGE</td>
+      <td>double</td>
+      <td>Damage</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>LOGDAMAG</td>
+      <td>double</td>
+      <td>LOG10 (DAMAGE)</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>MAXVALUE</td>
+      <td>double</td>
+      <td>Maximum value of stress or strain</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>MINVALUE</td>
+      <td>double</td>
+      <td>Minimum value of stress or strain</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>FOS</td>
+      <td>double</td>
+      <td>Factor of Safety</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>CRITANGL</td>
+      <td>double</td>
+      <td>Critical Angle</td>
+    </tr>
+  </tbody>
+</table><h2 id="FTGV_SHELL">FTGV_SHELL</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>grid id</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>LAYER1</td>
+      <td>integer</td>
+      <td>0 (for solids), 1 (for top layer), 2 (for bott...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>M01</td>
+      <td>double</td>
+      <td>spectral moment - 0th</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>M11</td>
+      <td>double</td>
+      <td>spectral moment - 1st</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>M21</td>
+      <td>double</td>
+      <td>spectral moment - 2nd</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>M41</td>
+      <td>double</td>
+      <td>spectral moment - 4th</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>E01</td>
+      <td>double</td>
+      <td>upward zero crossings</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>EP1</td>
+      <td>double</td>
+      <td>number of peaks</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>GAMMA1</td>
+      <td>double</td>
+      <td>irregularity factor</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>RMSTRS1</td>
+      <td>double</td>
+      <td>stress - rms</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>RMSTRN1</td>
+      <td>double</td>
+      <td>strain - rms</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>MNSTRS1</td>
+      <td>double</td>
+      <td>stress - mean</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>MNSTRN1</td>
+      <td>double</td>
+      <td>strain - mean</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>STRPSGM1</td>
+      <td>double</td>
+      <td>stress - mean+3sigma</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>STRMSGM1</td>
+      <td>double</td>
+      <td>stress - mean-3sigma</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>STNPSGM1</td>
+      <td>double</td>
+      <td>strain - mean+3sigma</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>STNMSGM1</td>
+      <td>double</td>
+      <td>strain - mean-3sigma</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>PLINDEX1</td>
+      <td>double</td>
+      <td>plasticity index</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>LAYER2</td>
+      <td>integer</td>
+      <td>0 (for solids), 1 (for top layer), 2 (for bott...</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>M02</td>
+      <td>double</td>
+      <td>spectral moment - 0th</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>M12</td>
+      <td>double</td>
+      <td>spectral moment - 1st</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>M22</td>
+      <td>double</td>
+      <td>spectral moment - 2nd</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>M42</td>
+      <td>double</td>
+      <td>spectral moment - 4th</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>E02</td>
+      <td>double</td>
+      <td>upward zero crossings</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>EP2</td>
+      <td>double</td>
+      <td>number of peaks</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>GAMMA2</td>
+      <td>double</td>
+      <td>irregularity factor</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>RMSTRS2</td>
+      <td>double</td>
+      <td>stress - rms</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>RMSTRN2</td>
+      <td>double</td>
+      <td>strain - rms</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>MNSTRS2</td>
+      <td>double</td>
+      <td>stress - mean</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>MNSTRN2</td>
+      <td>double</td>
+      <td>strain - mean</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>STRPSGM2</td>
+      <td>double</td>
+      <td>stress - mean+3sigma</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>STRMSGM2</td>
+      <td>double</td>
+      <td>stress - mean-3sigma</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>STNPSGM2</td>
+      <td>double</td>
+      <td>strain - mean+3sigma</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>STNMSGM2</td>
+      <td>double</td>
+      <td>strain - mean-3sigma</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>PLINDEX2</td>
+      <td>double</td>
+      <td>plasticity index</td>
+    </tr>
+  </tbody>
+</table><h2 id="FTGV_SOLID">FTGV_SOLID</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>grid id</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>LAYER1</td>
+      <td>integer</td>
+      <td>0 (for solids), 1 (for top layer), 2 (for bott...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>M0</td>
+      <td>double</td>
+      <td>spectral moment - 0th</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>M1</td>
+      <td>double</td>
+      <td>spectral moment - 1st</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>M2</td>
+      <td>double</td>
+      <td>spectral moment - 2nd</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>M4</td>
+      <td>double</td>
+      <td>spectral moment - 4th</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>E0</td>
+      <td>double</td>
+      <td>upward zero crossings</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>EP</td>
+      <td>double</td>
+      <td>number of peaks</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>GAMMA</td>
+      <td>double</td>
+      <td>irregularity factor</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>RMSTRS</td>
+      <td>double</td>
+      <td>stress - rms</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>RMSTRN</td>
+      <td>double</td>
+      <td>strain - rms</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>MNSTRS</td>
+      <td>double</td>
+      <td>stress - mean</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>MNSTRN</td>
+      <td>double</td>
+      <td>strain - mean</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>STRPSGM</td>
+      <td>double</td>
+      <td>stress - mean+3sigma</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>STRMSGM</td>
+      <td>double</td>
+      <td>stress - mean-3sigma</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>STNPSGM</td>
+      <td>double</td>
+      <td>strain - mean+3sigma</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>STNMSGM</td>
+      <td>double</td>
+      <td>strain - mean-3sigma</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>PLINDEX</td>
+      <td>double</td>
+      <td>plasticity index</td>
+    </tr>
+  </tbody>
+</table><h2 id="FTG_BM_AUTO">FTG_BM_AUTO</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>grid id</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>LAYER1</td>
+      <td>integer</td>
+      <td>0 (for solids), 1 (for top layer), 2 (for bott...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>BIAXM1</td>
+      <td>double</td>
+      <td>biaxial ratio - mean</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NONPR1</td>
+      <td>double</td>
+      <td>nonproportionality</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>DSTS1</td>
+      <td>double</td>
+      <td>dominant stress position</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>PLANG1</td>
+      <td>double</td>
+      <td>plane angle</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>LAYER2</td>
+      <td>integer</td>
+      <td>0 (for solids), 1 (for top layer), 2 (for bott...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>BIAXM2</td>
+      <td>double</td>
+      <td>biaxial ratio - mean</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>NONPR2</td>
+      <td>double</td>
+      <td>nonproportionality</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>PLANG2</td>
+      <td>double</td>
+      <td>plane angle</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>DSTS2</td>
+      <td>double</td>
+      <td>dominant stress position</td>
+    </tr>
+  </tbody>
+</table><h2 id="FTG_BM_SIMPLE">FTG_BM_SIMPLE</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>grid id</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>LAYER1</td>
+      <td>integer</td>
+      <td>0 (for solids), 1 (for top layer), 2 (for bott...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>BIAXM1</td>
+      <td>double</td>
+      <td>biaxial ratio - mean</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>BIAXS1</td>
+      <td>double</td>
+      <td>biaxial ratio - standard deviation</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ANGLS1</td>
+      <td>double</td>
+      <td>angle spread</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>ANGLM1</td>
+      <td>double</td>
+      <td>most popular angle</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>BIAXG1</td>
+      <td>double</td>
+      <td>biaxiality gate</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>MAXAP1</td>
+      <td>double</td>
+      <td>maximum ABS mas principal range</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>LAYER2</td>
+      <td>integer</td>
+      <td>0 (for solids), 1 (for top layer), 2 (for bott...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>BIAXM2</td>
+      <td>double</td>
+      <td>biaxial ratio - mean</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>BIAXS2</td>
+      <td>double</td>
+      <td>biaxial ratio - standard deviation</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>ANGLS2</td>
+      <td>double</td>
+      <td>angle spread</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>ANGLM2</td>
+      <td>double</td>
+      <td>most popular angle</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>BIAXG2</td>
+      <td>double</td>
+      <td>biaxiality gate</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>MAXAP2</td>
+      <td>double</td>
+      <td>maximum ABS mas principal range</td>
+    </tr>
+  </tbody>
+</table><h2 id="FTG_BM_SM_AUTO">FTG_BM_SM_AUTO</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>grid id</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>slcty</td>
+      <td>integer</td>
+      <td>seam location and type</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>BIAXM1</td>
+      <td>double</td>
+      <td>biaxial ratio - mean</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NONPR1</td>
+      <td>double</td>
+      <td>nonproportionality</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>DSTS1</td>
+      <td>double</td>
+      <td>dominant stress position</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>PLANG1</td>
+      <td>double</td>
+      <td>plane angle</td>
+    </tr>
+  </tbody>
+</table><h2 id="FTG_BM_SM_SIMPLE">FTG_BM_SM_SIMPLE</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>grid id</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>slcty</td>
+      <td>integer</td>
+      <td>seam location and type</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>BIAXM1</td>
+      <td>double</td>
+      <td>biaxial ratio - mean</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>BIAXS1</td>
+      <td>double</td>
+      <td>biaxial ratio - standard deviation</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ANGLS1</td>
+      <td>double</td>
+      <td>angle spread</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>ANGLM1</td>
+      <td>double</td>
+      <td>most popular angle</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>BIAXG1</td>
+      <td>double</td>
+      <td>biaxiality gate</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>MAXAP1</td>
+      <td>double</td>
+      <td>maximum ABS mas principal range</td>
+    </tr>
+  </tbody>
+</table><h2 id="FTG_BM_SM_STD">FTG_BM_SM_STD</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>grid id</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>slcty</td>
+      <td>integer</td>
+      <td>seam location and type</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>BIAXM1</td>
+      <td>double</td>
+      <td>biaxial ratio - mean</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NONPR1</td>
+      <td>double</td>
+      <td>nonproportionality</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>DSTS1</td>
+      <td>double</td>
+      <td>dominant stress position</td>
+    </tr>
+  </tbody>
+</table><h2 id="FTG_BM_STD">FTG_BM_STD</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>grid id</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>LAYER1</td>
+      <td>integer</td>
+      <td>0 (for solids), 1 (for top layer), 2 (for bott...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>BIAXM1</td>
+      <td>double</td>
+      <td>biaxial ratio - mean</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NONPR1</td>
+      <td>double</td>
+      <td>nonproportionality</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>DSTS1</td>
+      <td>double</td>
+      <td>dominant stress position</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>LAYER2</td>
+      <td>integer</td>
+      <td>0 (for solids), 1 (for top layer), 2 (for bott...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>BIAXM2</td>
+      <td>double</td>
+      <td>biaxial ratio - mean</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>NONPR2</td>
+      <td>double</td>
+      <td>nonproportionality</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>DSTS2</td>
+      <td>double</td>
+      <td>dominant stress position</td>
+    </tr>
+  </tbody>
+</table><h2 id="GRID_2D_SS">GRID_2D_SS</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>Number active grids ID or grid ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>FD1</td>
+      <td>double</td>
+      <td>Z1 = Fiber distance</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>X1</td>
+      <td>double</td>
+      <td>Normal in x         at Z1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Y1</td>
+      <td>double</td>
+      <td>Normal in y         at Z1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>TXY1</td>
+      <td>double</td>
+      <td>Shear  in xy        at Z1</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>FD2</td>
+      <td>double</td>
+      <td>Z2 = Fiber distance</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>X2</td>
+      <td>double</td>
+      <td>Normal in x         at Z2</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Y2</td>
+      <td>double</td>
+      <td>Normal in y         at Z2</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>TXY2</td>
+      <td>double</td>
+      <td>Shear  in xy        at Z2</td>
+    </tr>
+  </tbody>
+</table><h2 id="GRID_2D_SS_CPLX">GRID_2D_SS_CPLX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>Number active grids ID or grid ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>FD1</td>
+      <td>double</td>
+      <td>Z1 = Fiber distance</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>X1R</td>
+      <td>double</td>
+      <td>Normal in x         at Z1 - real part</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>X1I</td>
+      <td>double</td>
+      <td>Normal in x         at Z1 - imaginary part</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Y1R</td>
+      <td>double</td>
+      <td>Normal in y         at Z1 - real part</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Y1I</td>
+      <td>double</td>
+      <td>Normal in y         at Z1 - imaginary part</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>TXY1R</td>
+      <td>double</td>
+      <td>Shear  in xy        at Z1 - real part</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>TXY1I</td>
+      <td>double</td>
+      <td>Shear  in xy        at Z1 - imaginary part</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>FD2</td>
+      <td>double</td>
+      <td>Z2 = Fiber distance</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>X2R</td>
+      <td>double</td>
+      <td>Normal in x        at Z2 - real part</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>X2I</td>
+      <td>double</td>
+      <td>Normal in x         at Z2 - imaginary part</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Y2R</td>
+      <td>double</td>
+      <td>Normal in y         at Z2 - real part</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Y2I</td>
+      <td>double</td>
+      <td>Normal in y         at Z2 - imaginary part</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>TXY2R</td>
+      <td>double</td>
+      <td>Shear  in xy        at Z2 - real part</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>TXY2I</td>
+      <td>double</td>
+      <td>Shear  in xy        at Z2 - imaginary part</td>
+    </tr>
+  </tbody>
+</table><h2 id="GRID_2D_SS_FD">GRID_2D_SS_FD</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ID</td>
+      <td>integer</td>
+      <td>Grid point ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SX</td>
+      <td>double</td>
+      <td>ply stress SX</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SY</td>
+      <td>double</td>
+      <td>ply stress SY</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SXY</td>
+      <td>double</td>
+      <td>ply stress SXY</td>
+    </tr>
+  </tbody>
+</table><h2 id="GRID_2D_SS_FDNL">GRID_2D_SS_FDNL</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ID</td>
+      <td>integer</td>
+      <td>Grid point ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SX</td>
+      <td>double</td>
+      <td>Stress SX</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SY</td>
+      <td>double</td>
+      <td>Stress SY</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SZ</td>
+      <td>double</td>
+      <td>Stress SXY</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>SXY</td>
+      <td>double</td>
+      <td>ply stress SXY</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>PRESSURE</td>
+      <td>double</td>
+      <td>Pressure in DB</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>VOLSTR</td>
+      <td>double</td>
+      <td>Volumatric strain</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>EX</td>
+      <td>double</td>
+      <td>Strain EX</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>EY</td>
+      <td>double</td>
+      <td>Strain EY</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>EZ</td>
+      <td>double</td>
+      <td>Strain Z</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>EXY</td>
+      <td>double</td>
+      <td>Strain EXY</td>
+    </tr>
+  </tbody>
+</table><h2 id="GRID_2D_SS_FD_CPLX">GRID_2D_SS_FD_CPLX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ID</td>
+      <td>integer</td>
+      <td>Grid point ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SXR</td>
+      <td>double</td>
+      <td>Normal x</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SXI</td>
+      <td>double</td>
+      <td>Normal x</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SYR</td>
+      <td>double</td>
+      <td>Normal y</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>SYI</td>
+      <td>double</td>
+      <td>Normal y</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>SXYR</td>
+      <td>double</td>
+      <td>Real ply stress SXY</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>SXYI</td>
+      <td>double</td>
+      <td>Imag ply stress SXY</td>
+    </tr>
+  </tbody>
+</table><h2 id="GRID_AXISYM_SS">GRID_AXISYM_SS</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>LOC</td>
+      <td>integer</td>
+      <td>Location Code    ?</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>RS</td>
+      <td>double</td>
+      <td>Radial Stress    ?</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AZS</td>
+      <td>double</td>
+      <td>Azimuthal Stress ?</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AS</td>
+      <td>double</td>
+      <td>Axial Stress*</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>TS</td>
+      <td>double</td>
+      <td>Tangential Stress</td>
+    </tr>
+  </tbody>
+</table><h2 id="GRID_AXISYM_SS_CPLX">GRID_AXISYM_SS_CPLX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>LOC</td>
+      <td>integer</td>
+      <td>Location Code    ?</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>RSR</td>
+      <td>double</td>
+      <td>Radial Stress    ?</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>RSI</td>
+      <td>double</td>
+      <td>Radial Stress    ?</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AZSR</td>
+      <td>double</td>
+      <td>Azimuthal Stress ?</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AZSI</td>
+      <td>double</td>
+      <td>Azimuthal Stress ?</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>ASR</td>
+      <td>double</td>
+      <td>Axial stress     - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>ASI</td>
+      <td>double</td>
+      <td>Axial stress     - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>TSR</td>
+      <td>double</td>
+      <td>Tangential Stress R/M</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>TSI</td>
+      <td>double</td>
+      <td>Tangential Stress I/P</td>
+    </tr>
+  </tbody>
+</table><h2 id="GRID_SS">GRID_SS</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>Number of active grids or corner grid ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>X</td>
+      <td>double</td>
+      <td>Normal X</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Y</td>
+      <td>double</td>
+      <td>Normal Y</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Z</td>
+      <td>double</td>
+      <td>Normal Z</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>TXY</td>
+      <td>double</td>
+      <td>Shear xy</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>TYZ</td>
+      <td>double</td>
+      <td>Shear yz</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>TZX</td>
+      <td>double</td>
+      <td>Shear zx</td>
+    </tr>
+  </tbody>
+</table><h2 id="GRID_SS_CPLX">GRID_SS_CPLX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>Number of active grids or corner grid ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>XR</td>
+      <td>double</td>
+      <td>Normal X - real part</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>YR</td>
+      <td>double</td>
+      <td>Normal Y - real part</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ZR</td>
+      <td>double</td>
+      <td>Normal Z - real part</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>TXYR</td>
+      <td>double</td>
+      <td>Shear xy - real part</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>TYZR</td>
+      <td>double</td>
+      <td>Shear yz  - real part</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>TZXR</td>
+      <td>double</td>
+      <td>Shear zx RM</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>XI</td>
+      <td>double</td>
+      <td>Normal X - imaginary  part</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>YI</td>
+      <td>double</td>
+      <td>Normal Y - imaginary  part</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>ZI</td>
+      <td>double</td>
+      <td>Normal Y - imaginary  part</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>TXYI</td>
+      <td>double</td>
+      <td>Shear xy - imaginary part</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>TYZI</td>
+      <td>double</td>
+      <td>Shear yz - imaginary part</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>TZXI</td>
+      <td>double</td>
+      <td>Shear zx - imaginary part</td>
+    </tr>
+  </tbody>
+</table><h2 id="GRID_SS_FD">GRID_SS_FD</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ID</td>
+      <td>integer</td>
+      <td>Grid identifier</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SX</td>
+      <td>double</td>
+      <td>Stress SX</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SXY</td>
+      <td>double</td>
+      <td>Stress SXY</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>PA</td>
+      <td>double</td>
+      <td>Pressure in A</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>AX</td>
+      <td>double</td>
+      <td>Acceleration in x</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>AY</td>
+      <td>double</td>
+      <td>Acceleration in y</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>AZ</td>
+      <td>double</td>
+      <td>Acceleration in z</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>PRESSURE</td>
+      <td>double</td>
+      <td>Pressure in DB</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>SY</td>
+      <td>double</td>
+      <td>Stress SY</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>SYZ</td>
+      <td>double</td>
+      <td>stress SYZ</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>PB</td>
+      <td>double</td>
+      <td>???</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>BX</td>
+      <td>double</td>
+      <td>???</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>BY</td>
+      <td>double</td>
+      <td>???</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>BZ</td>
+      <td>double</td>
+      <td>???</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>SZ</td>
+      <td>double</td>
+      <td>???</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>SZX</td>
+      <td>double</td>
+      <td>Shear zx</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>PC</td>
+      <td>double</td>
+      <td>???</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>CX</td>
+      <td>double</td>
+      <td>???</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>CY</td>
+      <td>double</td>
+      <td>???</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>CZ</td>
+      <td>double</td>
+      <td>???</td>
+    </tr>
+  </tbody>
+</table><h2 id="GRID_SS_FDNL">GRID_SS_FDNL</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ID</td>
+      <td>integer</td>
+      <td>???</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SX</td>
+      <td>double</td>
+      <td>???</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SY</td>
+      <td>double</td>
+      <td>???</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SZ</td>
+      <td>double</td>
+      <td>???</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>SXY</td>
+      <td>double</td>
+      <td>ply stress SXY</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>SYZ</td>
+      <td>double</td>
+      <td>ply stress SYZ</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>SZX</td>
+      <td>double</td>
+      <td>Shear zx</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>PRESSURE</td>
+      <td>double</td>
+      <td>Pressure in DB</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>VOLSTR</td>
+      <td>double</td>
+      <td>Volumatric strain</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>EX</td>
+      <td>double</td>
+      <td>Strain EX</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>EY</td>
+      <td>double</td>
+      <td>Strain EY</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>EZ</td>
+      <td>double</td>
+      <td>Strain EZ</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>EXY</td>
+      <td>double</td>
+      <td>strain EXY</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>EYZ</td>
+      <td>double</td>
+      <td>strain EYZ</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>EZX</td>
+      <td>double</td>
+      <td>Strain EZX</td>
+    </tr>
+  </tbody>
+</table><h2 id="GRID_SS_NL">GRID_SS_NL</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>Number of active grids or corner grid ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SX</td>
+      <td>double</td>
+      <td>Stress SX</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SY</td>
+      <td>double</td>
+      <td>Stress SY</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SZ</td>
+      <td>double</td>
+      <td>Stress SY</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>SXY</td>
+      <td>double</td>
+      <td>stress SXY</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>SYZ</td>
+      <td>double</td>
+      <td>Shear SYZ</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>SZX</td>
+      <td>double</td>
+      <td>Shear SZX</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>SE</td>
+      <td>double</td>
+      <td>Equivalent stress</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>EPS</td>
+      <td>double</td>
+      <td>Equivalent plastic strain</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>ECS</td>
+      <td>double</td>
+      <td>Effective  creep   strain</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>EX</td>
+      <td>double</td>
+      <td>Strain EX</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>EY</td>
+      <td>double</td>
+      <td>Strain EY</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>EZ</td>
+      <td>double</td>
+      <td>Strain EZ</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>EXY</td>
+      <td>double</td>
+      <td>Strain EXY</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>EYZ</td>
+      <td>double</td>
+      <td>strain EYZ</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>EZX</td>
+      <td>double</td>
+      <td>Strain EZX</td>
+    </tr>
+  </tbody>
+</table><h2 id="NLOUT_TYPE">NLOUT_TYPE</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>EID</td>
+      <td>integer</td>
+      <td>Element identifier</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>POSTID</td>
+      <td>integer</td>
+      <td>Post Code ID</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>PLYID</td>
+      <td>integer</td>
+      <td>Ply ID when element type is shell or composite</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>CID</td>
+      <td>integer</td>
+      <td>Coordinate system ID</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>DATA_POS</td>
+      <td>integer</td>
+      <td>Start position in DATA dataset</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>DATA_LEN</td>
+      <td>integer</td>
+      <td>Number of rows in DATA dataset</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>DOMAIN_ID</td>
+      <td>integer</td>
+      <td>Domain identifier</td>
+    </tr>
+  </tbody>
+</table><h2 id="OCOMP_BEAM3_SS">OCOMP_BEAM3_SS</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GID</td>
+      <td>integer</td>
+      <td>Grid ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>PLYID</td>
+      <td>integer</td>
+      <td>Ply ID</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>NFT</td>
+      <td>integer</td>
+      <td>Number of Failure Theories for this ply, up to 3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>FT1</td>
+      <td>character</td>
+      <td>1st Failure Theory Name</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>FT2</td>
+      <td>character</td>
+      <td>2nd Failure Theory Name</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>FT3</td>
+      <td>character</td>
+      <td>3rd Failure Theory Name</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>SXX</td>
+      <td>double</td>
+      <td>ply stress SXX</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>SYY</td>
+      <td>double</td>
+      <td>ply stress SYY</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>SZZ</td>
+      <td>double</td>
+      <td>ply stress SZX</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>SXY</td>
+      <td>double</td>
+      <td>ply stress SXY</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>SYZ</td>
+      <td>double</td>
+      <td>ply stress SYZ</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>SXZ</td>
+      <td>double</td>
+      <td>ply stress SXZ</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>FP1</td>
+      <td>double</td>
+      <td>Max. Ply Failure Index for 1st Failure Theory</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>FP2</td>
+      <td>double</td>
+      <td>Max. Ply Failure Index for 2nd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>FP3</td>
+      <td>double</td>
+      <td>Max. Ply Failure Index for 3rd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>SR1</td>
+      <td>double</td>
+      <td>Min. Strength Ratio for 1st Failure Theory</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>SR2</td>
+      <td>double</td>
+      <td>Min. Strength Ratio for 2nd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>SR3</td>
+      <td>double</td>
+      <td>Min. Strength Ratio for 3rd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>FAIL</td>
+      <td>integer</td>
+      <td>Failed Element Flag</td>
+    </tr>
+  </tbody>
+</table><h2 id="OCOMP_ELEM_SS">OCOMP_ELEM_SS</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>INTPID</td>
+      <td>integer</td>
+      <td>Integration Point ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SXX</td>
+      <td>double</td>
+      <td>ply stress SXX</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SYY</td>
+      <td>double</td>
+      <td>ply stress SYY</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SZZ</td>
+      <td>double</td>
+      <td>ply stress SZX</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>SXY</td>
+      <td>double</td>
+      <td>ply stress SXY</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>SYZ</td>
+      <td>double</td>
+      <td>ply stress SYZ</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>SXZ</td>
+      <td>double</td>
+      <td>ply stress SXZ</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>EXX</td>
+      <td>double</td>
+      <td>ply strain EXX</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>EYY</td>
+      <td>double</td>
+      <td>ply strain EYY</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>EZZ</td>
+      <td>double</td>
+      <td>ply strain EZZ</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>EXY</td>
+      <td>double</td>
+      <td>ply strain EXY</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>EYZ</td>
+      <td>double</td>
+      <td>ply strain EYZ</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>EXZ</td>
+      <td>double</td>
+      <td>ply strain EXZ</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>SLAMN1</td>
+      <td>double</td>
+      <td>Interlaminar Normal stress between ply I and I+1</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>SLAMN2</td>
+      <td>double</td>
+      <td>Interlaminar Normal stress between ply I and I+1</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>SLAMN3</td>
+      <td>double</td>
+      <td>Interlaminar Normal stress between ply I and I+1</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>TLAMN1</td>
+      <td>double</td>
+      <td>Interlaminar Shear stress between ply I and I+1</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>TLAMN2</td>
+      <td>double</td>
+      <td>Interlaminar Shear stress between ply I and I+1</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>TLAMN3</td>
+      <td>double</td>
+      <td>Interlaminar Shear stress between ply I and I+1</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>FP1</td>
+      <td>double</td>
+      <td>Max. Ply Failure Index for 1st Failure Theory</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>FP2</td>
+      <td>double</td>
+      <td>Max. Ply Failure Index for 2nd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>FP3</td>
+      <td>double</td>
+      <td>Max. Ply Failure Index for 3rd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>SR1</td>
+      <td>double</td>
+      <td>Min. Strength Ratio for 1st Failure Theory</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>SR2</td>
+      <td>double</td>
+      <td>Min. Strength Ratio for 2nd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>SR3</td>
+      <td>double</td>
+      <td>Min. Strength Ratio for 3rd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>FM1</td>
+      <td>integer</td>
+      <td>Failure Mode for 1st Failure Theory</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>FM2</td>
+      <td>integer</td>
+      <td>Failure Mode for 2nd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>FM3</td>
+      <td>integer</td>
+      <td>Failure Mode for 3rd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>FBINDX</td>
+      <td>double</td>
+      <td>Failure Bond Index</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>DAM1</td>
+      <td>double</td>
+      <td>Total  Damage for Progressive Failure</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>DAM2</td>
+      <td>double</td>
+      <td>Fiber  Damage for Progressive Failure</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>DAM3</td>
+      <td>double</td>
+      <td>Matrix Damage for Progressive Failure</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>DAMM</td>
+      <td>integer</td>
+      <td>Micromechanical Damage Index 0 or 1</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>CREDENS</td>
+      <td>double</td>
+      <td>Crack Density</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>DAMM2</td>
+      <td>integer</td>
+      <td>Micromechanical Damage Index packed integer</td>
+    </tr>
+  </tbody>
+</table><h2 id="OCOMP_ELEM_SS_CPLX">OCOMP_ELEM_SS_CPLX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>INTPID</td>
+      <td>integer</td>
+      <td>Integration Point ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SXXR</td>
+      <td>double</td>
+      <td>Real ply stress SXX</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SYYR</td>
+      <td>double</td>
+      <td>Real ply stress SYY</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SZZR</td>
+      <td>double</td>
+      <td>Real ply stress SZX</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>SXYR</td>
+      <td>double</td>
+      <td>Real ply stress SXY</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>SYZR</td>
+      <td>double</td>
+      <td>Real ply stress SYZ</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>SXZR</td>
+      <td>double</td>
+      <td>Real ply stress SXZ</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>EXXR</td>
+      <td>double</td>
+      <td>Real ply strain EXX</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>EYYR</td>
+      <td>double</td>
+      <td>Real ply strain EYY</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>EZZR</td>
+      <td>double</td>
+      <td>Real ply strain EZZ</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>EXYR</td>
+      <td>double</td>
+      <td>Real ply strain EXY</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>EYZR</td>
+      <td>double</td>
+      <td>Real ply strain EYZ</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>EXZR</td>
+      <td>double</td>
+      <td>Real ply strain EXZ</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>SXXI</td>
+      <td>double</td>
+      <td>Imag ply stress SXX</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>SYYI</td>
+      <td>double</td>
+      <td>Imag ply stress SYY</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>SZZI</td>
+      <td>double</td>
+      <td>Imag ply stress SZX</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>SXYI</td>
+      <td>double</td>
+      <td>Imag ply stress SXY</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>SYZI</td>
+      <td>double</td>
+      <td>Imag ply stress SYZ</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>SXZI</td>
+      <td>double</td>
+      <td>Imag ply stress SXZ</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>EXXI</td>
+      <td>double</td>
+      <td>Imag ply strain EXX</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>EYYI</td>
+      <td>double</td>
+      <td>Imag ply strain EYY</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>EZZI</td>
+      <td>double</td>
+      <td>Imag ply strain EZZ</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>EXYI</td>
+      <td>double</td>
+      <td>Imag ply strain EXY</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>EYZI</td>
+      <td>double</td>
+      <td>Imag ply strain EYZ</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>EXZI</td>
+      <td>double</td>
+      <td>Imag ply strain EXZ</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>SLAMN1R</td>
+      <td>double</td>
+      <td>Real Interlaminar Normal stress between ply I ...</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>SLAMN2R</td>
+      <td>double</td>
+      <td>Real Interlaminar Normal stress between ply I ...</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>SLAMN3R</td>
+      <td>double</td>
+      <td>Real Interlaminar Normal stress between ply I ...</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>TLAMN1R</td>
+      <td>double</td>
+      <td>Real Interlaminar Shear stress between ply I a...</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>TLAMN2R</td>
+      <td>double</td>
+      <td>Real Interlaminar Shear stress between ply I a...</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>TLAMN3R</td>
+      <td>double</td>
+      <td>Real Interlaminar Shear stress between ply I a...</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>SLAMN1I</td>
+      <td>double</td>
+      <td>Imag Interlaminar Normal stress between ply I ...</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>SLAMN2I</td>
+      <td>double</td>
+      <td>Imag Interlaminar Normal stress between ply I ...</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>SLAMN3I</td>
+      <td>double</td>
+      <td>Imag Interlaminar Normal stress between ply I ...</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>TLAMN1I</td>
+      <td>double</td>
+      <td>Imag Interlaminar Shear stress between ply I a...</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>TLAMN2I</td>
+      <td>double</td>
+      <td>Imag Interlaminar Shear stress between ply I a...</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>TLAMN3I</td>
+      <td>double</td>
+      <td>Imag Interlaminar Shear stress between ply I a...</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>FP1</td>
+      <td>double</td>
+      <td>Max. Ply Failure Index for 1st Failure Theory</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>FP2</td>
+      <td>double</td>
+      <td>Max. Ply Failure Index for 2nd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>FP3</td>
+      <td>double</td>
+      <td>Max. Ply Failure Index for 3rd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>SR1</td>
+      <td>double</td>
+      <td>Min. Strength Ratio for 1st Failure Theory</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>SR2</td>
+      <td>double</td>
+      <td>Min. Strength Ratio for 2nd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>SR3</td>
+      <td>double</td>
+      <td>Min. Strength Ratio for 3rd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>FM1</td>
+      <td>integer</td>
+      <td>Failure Mode for 1st Failure Theory</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>FM2</td>
+      <td>integer</td>
+      <td>Failure Mode for 2nd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>FM3</td>
+      <td>integer</td>
+      <td>Failure Mode for 3rd Failure Theory</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>FBINDX</td>
+      <td>double</td>
+      <td>Failure Bond Index</td>
+    </tr>
+  </tbody>
+</table><h2 id="OCOMP_GASKET_SS">OCOMP_GASKET_SS</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>INTPID</td>
+      <td>integer</td>
+      <td>Integration Point ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>GPRES</td>
+      <td>double</td>
+      <td>Gasket Pressure</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>GCLOS</td>
+      <td>double</td>
+      <td>Gasket Closure</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>GPCLOS</td>
+      <td>double</td>
+      <td>Plastic Gasket Closure</td>
+    </tr>
+  </tbody>
+</table><h2 id="OCOMP_THERM_SS">OCOMP_THERM_SS</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>INTPID</td>
+      <td>integer</td>
+      <td>Integration Point ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>GRADX</td>
+      <td>double</td>
+      <td>Ply X-Gradient</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>GRADY</td>
+      <td>double</td>
+      <td>Ply Y-Gradient</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>GRADZ</td>
+      <td>double</td>
+      <td>Ply Z-Gradient</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>FLUXX</td>
+      <td>double</td>
+      <td>Ply X-Flux</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>FLUXY</td>
+      <td>double</td>
+      <td>Ply Y-Flux</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>FLUXZ</td>
+      <td>double</td>
+      <td>Ply Z-Flux</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>TEMP</td>
+      <td>double</td>
+      <td>Ply Temperature</td>
+    </tr>
+  </tbody>
+</table><h2 id="QUAD4_CN_FORCE">QUAD4_CN_FORCE</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>Number of active grids or corner grid ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>MX</td>
+      <td>double</td>
+      <td>Membrane force  in x</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>MY</td>
+      <td>double</td>
+      <td>Membrane force  in y</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>MXY</td>
+      <td>double</td>
+      <td>Membrane force  in xy</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>BMX</td>
+      <td>double</td>
+      <td>Bending   moment in x</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>BMY</td>
+      <td>double</td>
+      <td>Bending   moment in y</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>BMXY</td>
+      <td>double</td>
+      <td>Bending   moment in xy</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>TX</td>
+      <td>double</td>
+      <td>Shear  force  in x</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>TY</td>
+      <td>double</td>
+      <td>Shear  force  in y</td>
+    </tr>
+  </tbody>
+</table><h2 id="QUAD4_CN_FORCE_CPLX">QUAD4_CN_FORCE_CPLX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GRID</td>
+      <td>integer</td>
+      <td>Number of active grids or corner grid ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>MXR</td>
+      <td>double</td>
+      <td>Membrane force  in x - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>MYR</td>
+      <td>double</td>
+      <td>Membrane force  in y - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>MXYR</td>
+      <td>double</td>
+      <td>Membrane force  in xy - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>BMXR</td>
+      <td>double</td>
+      <td>Bending   moment in x - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>BMYR</td>
+      <td>double</td>
+      <td>Bending   moment in y - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>BMXYR</td>
+      <td>double</td>
+      <td>Bending   moment in xy - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>TXR</td>
+      <td>double</td>
+      <td>Shear  force  in x - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>TYR</td>
+      <td>double</td>
+      <td>Shear  force  in y - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>MXI</td>
+      <td>double</td>
+      <td>Membrane force  in x - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>MYI</td>
+      <td>double</td>
+      <td>Membrane force  in y - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>MXYI</td>
+      <td>double</td>
+      <td>Membrane force  in xy - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>BMXI</td>
+      <td>double</td>
+      <td>Bending   moment in x - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>BMYI</td>
+      <td>double</td>
+      <td>Bending   moment in y - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>BMXYI</td>
+      <td>double</td>
+      <td>Bending   moment in xy - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>TXI</td>
+      <td>double</td>
+      <td>Shear  force  in x - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>TYI</td>
+      <td>double</td>
+      <td>Shear  force  in y - imag./phase part</td>
+    </tr>
+  </tbody>
+</table><h2 id="QUAD4_FORCE">QUAD4_FORCE</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>MX</td>
+      <td>double</td>
+      <td>Membrane force  in x</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>MY</td>
+      <td>double</td>
+      <td>Membrane force  in y</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>MXY</td>
+      <td>double</td>
+      <td>Membrane force  in xy</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>BMX</td>
+      <td>double</td>
+      <td>Bending   moment in x</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>BMY</td>
+      <td>double</td>
+      <td>Bending   moment in y</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>BMXY</td>
+      <td>double</td>
+      <td>Bending   moment in xy</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>TX</td>
+      <td>double</td>
+      <td>Shear  force  in x</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>TY</td>
+      <td>double</td>
+      <td>Shear  force  in y</td>
+    </tr>
+  </tbody>
+</table><h2 id="QUAD4_FORCE_CPLX">QUAD4_FORCE_CPLX</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Field Name</th>
+      <th>Field Type</th>
+      <th>Field Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>MXR</td>
+      <td>double</td>
+      <td>Membrane force  in x - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>MYR</td>
+      <td>double</td>
+      <td>Membrane force  in y - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>MXYR</td>
+      <td>double</td>
+      <td>Membrane force  in xy - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>BMXR</td>
+      <td>double</td>
+      <td>Bending   moment in x - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>BMYR</td>
+      <td>double</td>
+      <td>Bending   moment in y - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>BMXYR</td>
+      <td>double</td>
+      <td>Bending   moment in xy - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>TXR</td>
+      <td>double</td>
+      <td>Shear  force  in x - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>TYR</td>
+      <td>double</td>
+      <td>Shear  force  in y - real/mag. part</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>MXI</td>
+      <td>double</td>
+      <td>Membrane force  in x - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>MYI</td>
+      <td>double</td>
+      <td>Membrane force  in y - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>MXYI</td>
+      <td>double</td>
+      <td>Membrane force  in xy - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>BMXI</td>
+      <td>double</td>
+      <td>Bending   moment in x - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>BMYI</td>
+      <td>double</td>
+      <td>Bending   moment in y - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>BMXYI</td>
+      <td>double</td>
+      <td>Bending   moment in xy - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>TXI</td>
+      <td>double</td>
+      <td>Shear  force  in x - imag./phase part</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>TYI</td>
+      <td>double</td>
+      <td>Shear  force  in y - imag./phase part</td>
+    </tr>
+  </tbody>
+</table>
